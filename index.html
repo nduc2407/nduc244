@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dang Nhat Duc - Box ACC NDUC</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Falling particles effect -->
+    <div class="particles-container">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+    
+    <audio id="bgMusic" loop autoplay muted>
+        <source src="nduc.mp4" type="audio/mp4">
+    </audio>
+    
+    <div class="container">
+        <!-- Hero Section -->
+        <div class="hero-section">
+            <div class="hero-background">
+                <div class="gradient-orb orb-1"></div>
+                <div class="gradient-orb orb-2"></div>
+                <div class="gradient-orb orb-3"></div>
+            </div>
+            
+            <div class="profile-card">
+                <div class="profile-image-wrapper">
+                    <div class="profile-image">
+                        <img src="bee.jpg" alt="Profile">
+                    </div>
+                </div>
+                
+                <h1 class="profile-name">Dang Nhat Duc</h1>
+                <p class="profile-role"> BOX ACC NDUC</p>
+                <p class="profile-desc">Thu Mua · Bán ACC · Oder Acc Game</p>
+                
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-value">500+</div>
+                        <div class="stat-label">Giao dịch</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">100%</div>
+                        <div class="stat-label">Uy tín</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">24/7</div>
+                        <div class="stat-label">Hỗ trợ</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Links Section -->
+        <div class="links-section">
+            <h2 class="section-title"> Liên hệ với tôi</h2>
+            
+            <div class="links-container">
+                <a href="https://zalo.me/0855754647" target="_blank" class="link-card zalo">
+                    <div class="link-icon-wrapper">
+                        <img src="https://img.icons8.com/color/96/zalo.png" alt="Zalo" class="link-icon-img">
+                    </div>
+                    <div class="link-content">
+                        <h3 class="link-title">Chat Zalo</h3>
+                        <p class="link-desc">0855754647 - Phản hồi nhanh</p>
+                    </div>
+                    <div class="link-arrow">→</div>
+                </a>
+
+                <a href="https://www.facebook.com/profile.php?id=61580662060862" target="_blank" class="link-card facebook">
+                    <div class="link-icon-wrapper">
+                        <i class="fab fa-facebook-f link-icon"></i>
+                    </div>
+                    <div class="link-content">
+                        <h3 class="link-title">Facebook</h3>
+                        <p class="link-desc">Trang cá nhân chính thức</p>
+                    </div>
+                    <div class="link-arrow">→</div>
+                </a>
+
+                <a href="https://zalo.me/g/ncimtz355" target="_blank" class="link-card group">
+                    <div class="link-icon-wrapper">
+                        <i class="fas fa-comments link-icon"></i>
+                    </div>
+                    <div class="link-content">
+                        <h3 class="link-title">Box ACC NDUC</h3>
+                        <p class="link-desc">Nhóm Zalo - Cộng đồng game</p>
+                    </div>
+                    <div class="link-arrow">→</div>
+                </a>
+            </div>
+        </div>
+
+        <!-- Warning Section -->
+        <div class="warning-section">
+            <div class="warning-icon">⚠️</div>
+            <div class="warning-content">
+                <h4>Lưu ý quan trọng</h4>
+                <p>Chỉ liên hệ qua các kênh chính thức bên trên để tránh bị lừa đảo. NDUC không chịu trách nhiệm với các giao dịch khác.</p>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p class="footer-text">© 2025 Box ACC NDUC - Dang Nhat Duc</p>
+            <p class="footer-subtext">Made with ❤️ for gamers</p>
+        </footer>
+    </div>
+
+    <!-- Custom Chat Box -->
+    <div id="customChatBox" class="chat-box">
+        <div class="chat-header">
+            <h3>💬 Nhắn tin cho tôi</h3>
+            <button class="close-chat" onclick="closeChatBox()">✕</button>
+        </div>
+        <div class="chat-body">
+            <div class="chat-intro">
+                <p>👋 Xin chào! Gửi tin nhắn của bạn bên dưới, tôi sẽ phản hồi sớm nhất!</p>
+                <p class="privacy-note">🔒 Không cần đăng nhập - Hoàn toàn ẩn danh</p>
+            </div>
+            <form id="messageForm" onsubmit="sendMessage(event)">
+                <input type="text" id="userName" placeholder="Tên của bạn (tùy chọn)" class="chat-input">
+                <input type="text" id="userContact" placeholder="Số điện thoại hoặc Zalo (tùy chọn)" class="chat-input">
+                <textarea id="userMessage" placeholder="Nhập tin nhắn của bạn..." class="chat-textarea" required></textarea>
+                <button type="submit" class="send-btn" id="sendBtn">
+                    <span id="btnText">📤 Gửi tin nhắn</span>
+                    <span id="btnLoading" style="display: none;">⏳ Đang gửi...</span>
+                </button>
+            </form>
+            <div id="messageStatus" class="message-status"></div>
+        </div>
+    </div>
+
+    <!-- Chat Bubble Button -->
+    <div class="chat-bubble" onclick="openChatBox()">
+        <i class="fas fa-comment-dots"></i>
+    </div>
+    
+    <script>
+        // Auto play nhạc khi load trang
+        const music = document.getElementById('bgMusic');
+        music.volume = 0.3;
+        
+        window.addEventListener('load', function() {
+            music.play().catch(() => {
+                // Nếu browser chặn autoplay, chờ user click
+                document.body.addEventListener('click', function() {
+                    music.play();
+                }, { once: true });
+            });
+        });
+        
+        // Chat functions
+        function openChatBox() {
+            document.getElementById('customChatBox').classList.add('active');
+            document.querySelector('.chat-bubble').style.display = 'none';
+        }
+        
+        function closeChatBox() {
+            document.getElementById('customChatBox').classList.remove('active');
+            document.querySelector('.chat-bubble').style.display = 'flex';
+        }
+        
+        async function sendMessage(event) {
+            event.preventDefault();
+            
+            const name = document.getElementById('userName').value || 'Khách ẩn danh';
+            const contact = document.getElementById('userContact').value || 'Không cung cấp';
+            const message = document.getElementById('userMessage').value;
+            const statusDiv = document.getElementById('messageStatus');
+            const sendBtn = document.getElementById('sendBtn');
+            const btnText = document.getElementById('btnText');
+            const btnLoading = document.getElementById('btnLoading');
+            
+            // Disable button và hiện loading
+            sendBtn.disabled = true;
+            btnText.style.display = 'none';
+            btnLoading.style.display = 'inline';
+            
+            const fullMessage = `
+🔔 TIN NHẮN MỚI TỪ WEBSITE!
+
+👤 Tên: ${name}
+📞 Liên hệ: ${contact}
+💬 Tin nhắn: ${message}
+
+⏰ Thời gian: ${new Date().toLocaleString('vi-VN')}
+            `;
+            
+            try {
+                // Sử dụng FormSubmit.co - Không cần setup gì, hoàn toàn miễn phí!
+                const response = await fetch('https://formsubmit.co/ajax/dangnhatduc2407@gmail.com', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Accept': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        name: name,
+                        contact: contact,
+                        message: message,
+                        _subject: '🔔 Tin nhắn mới từ Website Box ACC NDUC!',
+                        _template: 'box'
+                    })
+                });
+                
+                if (response.ok) {
+                    statusDiv.innerHTML = '<div class="success">✅ Gửi thành công! Tôi sẽ phản hồi sớm nhất.</div>';
+                    document.getElementById('messageForm').reset();
+                    
+                    setTimeout(() => {
+                        statusDiv.innerHTML = '';
+                        closeChatBox();
+                    }, 3000);
+                } else {
+                    throw new Error('Failed to send');
+                }
+            } catch (error) {
+                statusDiv.innerHTML = '<div class="error">❌ Gửi thất bại! Vui lòng liên hệ qua Zalo: 0855754647</div>';
+            } finally {
+                // Re-enable button
+                sendBtn.disabled = false;
+                btnText.style.display = 'inline';
+                btnLoading.style.display = 'none';
+            }
+        }
+
+        // Auto play music
+        (function() {
+            const music = document.getElementById('bgMusic');
+            
+            // Trick 1: Start muted, then unmute
+            music.muted = false;
+            music.volume = 0.3;
+            
+            // Trick 2: Try multiple times
+            const tryPlay = () => {
+                music.play()
+                    .then(() => console.log('Music playing'))
+                    .catch(() => {
+                        // Retry after short delay
+                        setTimeout(tryPlay, 500);
+                    });
+            };
+            
+            // Start immediately
+            tryPlay();
+            
+            // Also try on page show event
+            window.addEventListener('pageshow', tryPlay);
+        })();
+    </script>
+    </div>
+</body>
+</html>
